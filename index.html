@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/b8612dc57b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container first">
+        <header>
+            <figure>
+                <img src="assets/cover-1.png" alt="Album Cover 1">
+            </figure>
+        </header>
+        <section class="body">
+            <h3 class="title">Lost in the City Lights</h3>
+            <span class="author">Cosmo Sheldrake</span>
+           
+            <div class="player">
+                <div class="time-elapsed">
+                    <span class="duration-start">00:00</span>
+                    <span class="duration-end">01:11</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myProgressBar"></div>
+                </div>
+                <div class="buttons">
+                    <button class="prev" id="previous">
+                        <i class="bi bi-skip-start-fill"></i>
+                    </button>
+                    <button class="play-pause" id="playPause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <button class="next" id="next">
+                        <i class="bi bi-skip-end-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container second">
+        <header>
+            <figure>
+                <img src="assets/cover-2.png" alt="Album Cover 2">
+            </figure>
+        </header>
+        <section class="body">
+            <h3 class="title">Forest Lullaby</h3>
+            <span class="author">Lesfm</span>
+            
+            <div class="player">
+                <div class="time-elapsed">
+                    <span class="duration-start">00:00</span>
+                    <span class="duration-end">02:18</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myOtherProgressBar"></div>
+                </div>
+                <div class="buttons">
+                    <button class="prev" id="previous">
+                        <i class="bi bi-skip-start-fill"></i>
+                    </button>
+                    <button class="play-pause" id="playPause">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                    <button class="next" id="next">
+                        <i class="bi bi-skip-end-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <audio id="song1" src="assets/lost-in-city-lights-145038.mp3"></audio>
+    <audio id="song2" src="assets/forest-lullaby-110624.mp3"></audio>
+    <script src="app.js"></script>
+</body>
+</html>
