@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site](https://motlakz.github.io/music-player-app/)
+- Live Site URL: [Live Site](https://motlakz.github.io/javascript-music-player/)
 
 ## My process
 
